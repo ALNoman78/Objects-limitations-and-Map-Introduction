@@ -1,3 +1,5 @@
+//? input data
+
 const rawApiData = [
   {
     id: "p-001",
@@ -96,3 +98,21 @@ const rawApiData = [
     stock: 60,
   },
 ];
+
+//? output data = [{ name : "Phone"}, {name : "Smart Watch"}]
+
+//* process
+//* filter => electronics
+//* short => rating
+//* slice => first 3 (top - 3 )
+//* Map => transform object shape to {name : "Name"}
+
+const topElectronicProduct = rawApiData
+    .filter((items) => items.category === "Electronics")
+    .sort((a, b) => b.rating - a.rating)
+    .slice(0, 3)
+    .map((items) => {
+
+    }); //? if i use object their I have to use return
+
+console.log(topElectronicProduct);
