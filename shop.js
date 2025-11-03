@@ -112,7 +112,13 @@ const topElectronicProduct = rawApiData
     .sort((a, b) => b.rating - a.rating)
     .slice(0, 3)
     .map((items) => {
+        return{
+            name : items.productName
+        }
+    })
+    // .map(items => ({ name : items.productName})); // here is the one liner code
 
-    }); //? if i use object their I have to use return
+    // also we can use one liner
+     //? if i use object their I have to use return
 
 console.log(topElectronicProduct);
