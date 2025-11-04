@@ -48,3 +48,14 @@ const nestedArr = [1, 3, 5, 6, [12 , 30, 40 , ["Noman", 21 , [11, 22 , 33 , 44, 
 const flatArr = nestedArr.flat(Infinity)
 
 console.log(flatArr)
+
+
+const tagFromPost = [
+    ["javascript", "react", "js", "css"],
+    ["node ", "express "],
+    ["css", "html", "react"]
+]
+
+const filterTags = [...new Set( tagFromPost.flat(Infinity))]
+
+console.log(filterTags)
