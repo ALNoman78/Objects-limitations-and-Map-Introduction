@@ -41,7 +41,7 @@ const sortString = arr.sort((a,b) => a.localeCompare(b))
 // console.log(sortString)
 
 
-const nestedArr = [1, 3, 5, 6, [12 , 30, 40 , ["Noman", 21 , [11, 22 , 33 , 44, 55, [66, 77, 88, 99, ["testing"]]]]]]
+const nestedArr = [1, 3, 5, 6,[] , [12 , 30, 40 , ["Noman", 21 , [11, 22 , 33 , 44, 55, [66, 77, 88, 99, ["testing"]]]]]]
 
 // flat () [it will work for large data and nested array to remove nested array]
 
@@ -58,4 +58,4 @@ const tagFromPost = [
 
 const filterTags = [...new Set( tagFromPost.flat(Infinity))]
 
-console.log(filterTags)
+// console.log(filterTags)
