@@ -47,6 +47,5 @@ const tagFromPost = [
 
 const dataFilter = [...new Set(tagFromPost.flat(Infinity))]
 console.log(dataFilter.length)
-// console.log(tagFromPost.flat().length); // here is the main remove duplicat
-
+// console.log(tagFromPost.flat().length); // here is the main remove duplication data 
 
