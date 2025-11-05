@@ -33,5 +33,19 @@ console.log(nestedArr)
 console.log(removeNestedArr)
 
 
-// remove duplicate array for here  the data of Array [ use case like blog website or something like that]
+// remove duplicate array for here  the data of Array [ use case like blog website or something like that
+
+
+const tagFromPost = [
+    ["javascript", "react", "css", "html", "frontend"],
+    ["node", "express", "api", "backend", "javascript"],
+    ["react", "tailwind", "css", "ui", "frontend"],
+    ["python", "django", "api", "backend", "server"],
+    ["nextjs", "react", "typescript", "frontend", "node"],
+    ["figma", "design", "uiux", "frontend", "html"]
+];
+
+const dataFilter = [...new Set(tagFromPost.flat(Infinity))]
+console.log(dataFilter)
+
 
