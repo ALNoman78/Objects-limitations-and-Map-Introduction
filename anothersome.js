@@ -5,7 +5,7 @@ const someNumbers = numbers.some((number) => number % 2 === 0) // we can find wh
 // console.log(someNumbers)
 
 
-const currentRole = [ "guest " , "editor", "admin"]
+const currentRole = [ "guest " , "editor"]
 const mainRole = ["admin" , "manager "]
 
 const role = mainRole.some((exceptRole) => currentRole.includes(exceptRole))
